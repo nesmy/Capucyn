@@ -1,0 +1,444 @@
+@use "utils" as *;
+
+$color_type_0: rgb(230, 90, 231);
+$color_type_1: rgb(245, 192, 170);
+$color_type_2: rgb(89, 205, 251);
+$color_type_3: rgba(89, 205, 251, 0.368);
+
+$font_type_0: 400 96px/1.5 "Open Sans", Helvetica, Arial, serif;
+$font_type_1: 400 90px/1.5 "Open Sans", Helvetica, Arial, serif;
+$font_type_2: 400 35px/1.2 "Open Sans", Helvetica, Arial, serif;
+$font_type_3: 30px/1.2 "Open Sans", Helvetica, Arial, serif;
+$font_type_4: 400 30px/1.2 "Open Sans", Helvetica, Arial, serif;
+$font_type_5: 400 30px/0.96 "Open Sans", Helvetica, Arial, serif;
+$font_type_6: 400 24px/1.2 "Open Sans", Helvetica, Arial, serif;
+$font_type_7: 400 12px/1.5 "Open Sans", Helvetica, Arial, serif;
+
+.body {
+  @include flex-column;
+  background-color: $color_type_1;
+  position: relative;
+  min-height: 0px;
+}
+.home {
+  @include flex-column;
+  background: var(--src) center center / 100% 100% no-repeat;
+  position: relative;
+  min-height: 1024px;
+}
+.body__hero_title {
+  @include v-center-content;
+  @include font-face($font_type_0, $color_type_0, 0px);
+  width: 439px;
+  height: min-content;
+  @include lg {
+    font-size: 80px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 68px;
+  }
+  @include sm {
+    font-size: 56px;
+  }
+  @include xs {
+    font-size: 52px;
+  }
+  @include xxs {
+    font-size: 44px;
+  }
+  @include tn {
+    font-size: 40px;
+  }
+  position: absolute;
+  top: 518px;
+  min-height: 0px;
+  left: 102px;
+}
+.wrapper {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+  margin: 0px 0px 983px;
+}
+.body__box {
+  @include flex-column;
+  background-color: $color_type_3;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  min-height: 0px;
+}
+.row {
+  @include h-center-content;
+  width: 51.67%;
+  @include mq-between(xxl, max);
+  @include mq-between(xxl, xxxl);
+  @include xxl;
+  @include xl;
+  @include lg;
+  @include md {
+    width: 58.77%;
+  }
+  @include sm {
+    width: 65.53%;
+  }
+  @include xs {
+    width: 71.71%;
+  }
+  @include xxs {
+    justify-content: center;
+    align-items: stretch;
+    width: 77.17%;
+  }
+  @include tn {
+    width: 81.84%;
+  }
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+  margin: 3px auto 2px;
+}
+.row > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 85px;
+  min-width: 85px;
+  @include xxs;
+}
+.body__title {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  cursor: pointer;
+  @include lg {
+    font-size: 24px;
+    text-align: center;
+  }
+  @include sm {
+    font-size: 20px;
+  }
+  @include xxs {
+    font-size: 16px;
+  }
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+}
+.row > .spacer {
+  flex: 0 1 198.5px;
+  @include xxs {
+    flex: 0 1 200px;
+    display: flex;
+  }
+}
+.row > .item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 113px;
+  min-width: 113px;
+  @include xxs {
+    flex: 0 0 85px;
+    min-width: 85px;
+  }
+}
+.body__title1 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_5;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  cursor: pointer;
+  @include lg {
+    font-size: 24px;
+    text-align: center;
+  }
+  @include sm {
+    font-size: 20px;
+  }
+  @include xxs {
+    font-size: 16px;
+  }
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+  margin: 7px 0px 0px;
+}
+.row > .spacer1 {
+  flex: 0 1 202.5px;
+  @include xxs {
+    flex: 0 1 200px;
+    display: flex;
+  }
+}
+.row > .item2 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 109px;
+  min-width: 109px;
+  @include xxs {
+    flex: 0 0 85px;
+    min-width: 85px;
+  }
+}
+.body__title2 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_4;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  cursor: pointer;
+  @include lg {
+    font-size: 24px;
+    text-align: center;
+  }
+  @include sm {
+    font-size: 20px;
+  }
+  @include xxs {
+    font-size: 16px;
+  }
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+}
+.about {
+  @include flex-column;
+  width: 92.67%;
+  position: relative;
+  min-height: 0px;
+  margin: 140px auto;
+}
+.col {
+  @include flex-column;
+  position: relative;
+  min-height: 0px;
+}
+.row1 {
+  display: flex;
+  @include xl {
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  position: relative;
+  min-height: 0px;
+}
+.row1 > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 919px;
+}
+.col1 {
+  @include flex-column;
+  @include mq-between(xxl, max);
+  @include mq-between(xxl, xxxl);
+  @include xxl;
+  @include xl {
+    margin: 6px 118px 43px 0px;
+  }
+  @include lg {
+    margin: 6px 112px 43px 0px;
+  }
+  @include md;
+  @include sm {
+    margin: 6px 126px 43px 0px;
+  }
+  @include xs;
+  @include xxs;
+  @include tn;
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+  margin: 6px 0px 0px;
+}
+.body__hero_title1 {
+  @include v-center-content;
+  @include font-face($font_type_1, $color_type_0, 0px);
+  @include xxl {
+    text-align: left;
+  }
+  @include xl {
+    font-size: 60px;
+    margin: 0px 128px 0px 0px;
+  }
+  @include lg {
+    font-size: 50px;
+  }
+  @include md {
+    font-size: 30px;
+  }
+  @include xxs {
+    font-size: 44px;
+  }
+  @include tn {
+    font-size: 40px;
+  }
+  @include mq-between(xxl, max) {
+    margin: 0px;
+  }
+  @include mq-between(xxl, xxxl);
+  @include sm {
+    margin: 0px 12px 0px 0px;
+  }
+  @include xs;
+  position: relative;
+  min-height: 0px;
+}
+.body__big_title {
+  @include v-center-content;
+  @include font-face($font_type_2, $color_type_0, 0px);
+  width: 40.04%;
+  @include xl {
+    font-size: 30px;
+    text-align: left;
+  }
+  @include lg {
+    font-size: 36px;
+    width: 56.15%;
+    margin: 38px 43.85% 0px 0%;
+  }
+  @include md {
+    font-size: 20px;
+    width: 70.84%;
+    margin: 38px 29.16% 0px 0%;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include tn {
+    font-size: 20px;
+  }
+  @include mq-between(xxl, max);
+  @include mq-between(xxl, xxxl);
+  @include xxl;
+  @include sm {
+    width: 72.25%;
+    margin: 38px 27.75% 0px 0%;
+  }
+  @include xxs;
+  position: relative;
+  min-height: 49px;
+  margin: 38px 59.96% 0px 0%;
+}
+.row1 > .spacer {
+  flex: 0 1 121px;
+  @include xl {
+    flex: 0 1 auto;
+    display: flex;
+  }
+}
+.row1 > .item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 223px;
+}
+.body__box1 {
+  @include flex-column;
+  background: var(--src) center center / 100% 100% no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.247));
+  @include mq-between(xxl, max);
+  @include mq-between(xxl, xxxl);
+  @include xxl;
+  @include xl;
+  @include lg;
+  @include md;
+  @include sm;
+  @include xs;
+  @include xxs;
+  @include tn;
+  position: relative;
+  flex-grow: 1;
+  min-height: 224px;
+  margin: 0px 0px 13px;
+}
+.body__medium_title {
+  @include v-center-content;
+  @include font-face($font_type_6, $color_type_2, 0px);
+  @include xxl {
+    text-align: left;
+  }
+  @include lg {
+    font-size: 36px;
+    margin: 6px 0px 0px 28px;
+  }
+  @include md {
+    font-size: 32px;
+    margin: 6px 0px 0px 24px;
+  }
+  @include sm {
+    font-size: 20px;
+    margin: 6px 0px 0px 20px;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include tn {
+    font-size: 20px;
+  }
+  @include mq-between(xxl, max);
+  @include mq-between(xxl, xxxl);
+  @include xl {
+    margin: 6px 0px 0px 4px;
+  }
+  @include xxs {
+    margin: 6px 0px 0px 16px;
+  }
+  position: relative;
+  min-height: 0px;
+  margin: 50px 0px 0px 4px;
+}
+.body > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 52px;
+}
+.footer {
+  @include flex-column;
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+}
+.body__box2 {
+  @include flex-column;
+  background-color: $color_type_1;
+  border-style: solid;
+  border-color: $color_type_0;
+  border-width: 1px 0px 0px 0px;
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+}
+.row2 {
+  @include h-center-content;
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+  margin: 17px 0px;
+}
+.row2 > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 76px;
+  min-width: 76px;
+}
+.body__info {
+  @include font-face($font_type_7, $color_type_0, -0.20000000298023224px);
+  position: relative;
+  flex-grow: 1;
+  min-height: 0px;
+}
+.row2 > .spacer {
+  flex: 0 1 21px;
+}
+.row2 > .item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 84px;
+  min-width: 84px;
+}
