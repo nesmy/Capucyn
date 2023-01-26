@@ -1,3 +1,17 @@
 .home{
-    
+    .banner{
+        img{
+            width: 200vh;
+            height: 100vh;
+        }
+
+    }
+    .about{
+        margin: 0 150px;
+        
+        .col{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
