@@ -1,0 +1,38 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    h1{
+        margin-top: 70px;
+        color: rgb(230, 90, 231);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        input{
+            width: 400px;
+            height: 30px;
+            margin-top: 20px;
+            border: none;
+            background-color: rgb(89, 205, 251);
+        }
+        .submit{
+            width: 100px;
+            margin-bottom: 232px;
+            color: rgb(89, 205, 251);
+            background-color: rgb(230, 90, 231);
+            font-weight: 400;
+          
+        }
+
+        .text{
+            height: 100px;
+        }
+    }
+}

@@ -10,12 +10,12 @@ const Home = () => {
             </div>
             <div className="about" id="about">
                 <div className="col">
-                    <div className="row">
+                    <div className="row row1">
                         <h1>Meet Capucyne D&D</h1>
                         <h2>Protfolio of Artwork</h2>
                     </div>
-                    <div className="row">
-                        <img src={require('./img/profile.jpeg')} alt="profile" />
+                    <div className="row row2">
+                        <img src={require('./img/profile.jpeg')} alt="profile" className="profileImg"/>
                     </div>
                 </div>
                 <p>Capucyne D&D (Drawings & Designs) is an upcoming artist based in Montreal,Canada. 

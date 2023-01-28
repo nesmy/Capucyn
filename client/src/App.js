@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project";
 import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 
 const Layout = () => {
   return (
@@ -26,13 +27,17 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/projects/:id",
+        path: "/projects/",
         element: <Projects/>,
       },
       {
         path: "/project/:id",
         element: <Project/>,
       },
+      {
+        path: "/contact",
+        element: <Contact/>
+      }
     ],
   },
 ]);

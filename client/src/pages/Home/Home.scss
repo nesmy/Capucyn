@@ -1,17 +1,58 @@
 .home{
     .banner{
+        position: relative;
         img{
             width: 200vh;
             height: 100vh;
         }
 
+        h1{
+            position: absolute;
+            margin-left: 50px;
+            top: 50%;
+            font-size: 75px;
+            color: #E65AE7;
+        }
+
     }
     .about{
-        margin: 0 150px;
+        margin: 70px 150px;
         
         .col{
             display: flex;
             justify-content: space-between;
+            
+
+            .profileImg{
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+            }
+
+            .row{
+                
+            }
+
+            .row1{
+                h1{
+                    font-size: 70px;
+                    color: #E65AE7;
+                }
+
+                h2{
+                    font-size: 30px;
+                    color: #E65AE7;
+                }
+            }
+
+            .row2{
+
+            }
+        }
+
+        p{
+            color: #59CDFB;
+            font-size: 30px;
         }
     }
 }

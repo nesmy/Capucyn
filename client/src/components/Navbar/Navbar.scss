@@ -1,7 +1,12 @@
 .navbar{
-    height: 65px;
-    background-color: rgba(89, 205, 251, 0.368);
+    width: 100vw;
+    height: 45px;
+    background-color: rgba(89, 205, 251, 0.80);
+    position: fixed;
+    margin: auto;
+    z-index: 9;
 
+    
     .wrapper{
         padding: 10px 30px;
         display: flex;
@@ -13,6 +18,9 @@
             display: flex;
             align-items: center;
             font-size: 18px;
+            .link{
+                color: #E65AE7;
+            }
         }
     }
 }
