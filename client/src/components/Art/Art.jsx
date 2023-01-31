@@ -4,17 +4,17 @@ import {Link} from "react-router-dom";
 
 const Art = ({item}) => {
     return (
-        <Link className="link" to={`/project/${item.id}`}>
-            <div className="art">
+        <div className="art">
+                <Link className="link" to={`/art/${item.id}`}>
                 <div className="img">
-                    <img src="" alt="" className="mainImg" />
+                    <img src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" className="mainImg" />
                 </div>
-                <h2>Name</h2>
                 <div className="prices">
+                    <h2>Name</h2>
                     <h3>$10</h3>
                 </div>
-            </div>
         </Link>
+            </div>
     );
 };
 

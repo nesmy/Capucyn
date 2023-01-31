@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
+import ArtP from "./pages/ArtP/Artp";
 
 const Layout = () => {
   return (
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact/>
+      },
+      {
+        path: "/art/:id",
+        element: <ArtP/>
       }
     ],
   },

@@ -29,10 +29,11 @@
     "price": {
       "type": "decimal"
     },
-    "project": {
+    "projects": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::project.project"
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "arts"
     }
   }
 }

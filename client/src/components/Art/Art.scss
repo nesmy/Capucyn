@@ -1,3 +1,15 @@
 .art{
-    
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+    .prices{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img{
+        max-width: 100%;
+    }
 }
