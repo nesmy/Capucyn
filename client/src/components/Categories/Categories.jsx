@@ -2,13 +2,14 @@ import React from "react";
 import "./Categories.scss";
 import { Link } from "react-router-dom";
 
-const Categories = () =>{
+const Categories = ({item}) =>{
+    console.log(item);
     return(
-        <div className="categories">
-            <Link to="/project/1">
-                <div className="item"></div>
-            </Link>
-        </div>
+        <Link className="link" to={`/project/${item.id}`}>
+            <div className="categories">
+                <img src={process.env.REACT_APP_UPLOAD_URL + item?.attributes?.img?.data?.attributes?.url} alt="" className="img" />
+            </div>
+        </Link>
     );
 };
 

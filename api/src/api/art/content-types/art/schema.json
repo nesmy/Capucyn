@@ -4,7 +4,8 @@
   "info": {
     "singularName": "art",
     "pluralName": "arts",
-    "displayName": "art"
+    "displayName": "art",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,23 @@
       "type": "string"
     },
     "img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "price": {
       "type": "decimal"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
     }
   }
 }

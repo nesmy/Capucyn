@@ -8,14 +8,14 @@ import "./Projects.scss";
 const Projects = () => {
 
     const { data, loading, error} = useFetch(
-        `/products?populate=*`
+        `/projects?populate=*`
     );
-
+        console.log(data);
     return (
         <div className="projects">
             <div className="top"></div>
             <div className="item">
-                    <List Card={Categories} data={data} key={data.id}/>
+                    <List/>
             </div>
         </div>
     );
