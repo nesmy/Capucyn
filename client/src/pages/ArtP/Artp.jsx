@@ -4,7 +4,7 @@ import "./ArtP.scss";
 const ArtP = () => {
     return (
         <div className="artP">
-
+            
         </div>
     );
 };

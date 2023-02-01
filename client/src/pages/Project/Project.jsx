@@ -9,7 +9,7 @@ const Project = () => {
     const id = parseInt(useParams().id);
 
       const { data, loading, error } = useFetch(
-    `/projects/${id}?populate=*`
+    `/projects/${id}?populate=deep`
   );
     console.log(data?.attributes?.arts?.data);
     

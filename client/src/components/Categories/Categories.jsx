@@ -3,7 +3,7 @@ import "./Categories.scss";
 import { Link } from "react-router-dom";
 
 const Categories = ({item}) =>{
-    console.log(item?.id);
+    console.log(item);
     return(
         <Link className="link" to={{ 
                     pathname: `/project/${item?.id}`,

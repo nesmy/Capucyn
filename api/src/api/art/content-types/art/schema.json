@@ -29,9 +29,9 @@
     "price": {
       "type": "decimal"
     },
-    "projects": {
+    "project": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::project.project",
       "inversedBy": "arts"
     }
