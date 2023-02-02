@@ -28,11 +28,16 @@
             color: rgb(89, 205, 251);
             background-color: rgb(230, 90, 231);
             font-weight: 400;
+            cursor: pointer;
           
         }
 
         .text{
+            width: 400px;
             height: 100px;
+            margin-top: 20px;
+            border: none;
+            background-color: rgb(89, 205, 251);
         }
     }
 }
